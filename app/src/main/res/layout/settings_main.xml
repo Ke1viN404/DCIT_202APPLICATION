@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/ex_bg_pink_modified"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:src="@drawable/back_btn"
+            android:background="@color/blackish_background_color_50"
+
+            ></ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="#FFFB92A8"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.9">
+        <!--Layout 1-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:alpha="0.9">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/container_color"
+                android:orientation="vertical"
+
+                android:padding="15dp">
+
+                <!--NightMode-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/nightModeIcon"
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#4C4C4C"
+                        android:padding="12dp"
+
+                        android:src="@drawable/moonwhite"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/nightModeIcon"
+                        android:text="Night Mode"
+                        android:textColor="#ffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+
+
+                        ></TextView>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_centerInParent="true"
+                        android:switchMinWidth="50dp"
+                        android:theme="@style/nightModeSwitch"></androidx.appcompat.widget.SwitchCompat>
+
+
+                    <!--notification-->
+
+                </RelativeLayout>
+                <!--notification-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/notificationIcon"
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@color/blackish_background_color_50"
+                        android:padding="12dp"
+
+                        android:src="@drawable/notification_icon"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/notificationIcon"
+                        android:text="Notification"
+                        android:textColor="#ffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+
+
+                        ></TextView>
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_centerInParent="true"
+                        android:switchMinWidth="50dp"
+                        android:theme="@style/notificationSwitch"></androidx.appcompat.widget.SwitchCompat>
+
+                    <!--notification-->
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <!--Layout 2-->
+
+            <!--Layout3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/container_color"
+                android:orientation="vertical"
+
+                android:padding="15dp">
+                <!--Layout3 sec1-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/MessageIcon"
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#92BDFB"
+                        android:padding="12dp"
+
+                        android:src="@drawable/message_icon"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/MessageIcon"
+                        android:text="Send us a message"
+                        android:textColor="#ffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+
+
+                        ></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/forward_arrow"></ImageView>
+
+
+                    <!--notification-->
+
+
+                </RelativeLayout>
+                <!--Layout3 sec2-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/abaoutUsIcon"
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#92BDFB"
+                        android:padding="12dp"
+
+                        android:src="@drawable/about_us_icon"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/abaoutUsIcon"
+                        android:text="About Us"
+                        android:textColor="#ffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+
+
+                        ></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/forward_arrow"></ImageView>
+
+
+                    <!--notification-->
+
+
+                </RelativeLayout>
+                <!--Layout3 sec3-->
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/FAQIcon"
+
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#fa7e05"
+                        android:padding="12dp"
+
+                        android:src="@drawable/faq_icon"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/FAQIcon"
+                        android:text="FAQs"
+                        android:textColor="#ffff"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+
+
+                        ></TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/forward_arrow"></ImageView>
+
+
+                    <!--notification-->
+
+
+                </RelativeLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
