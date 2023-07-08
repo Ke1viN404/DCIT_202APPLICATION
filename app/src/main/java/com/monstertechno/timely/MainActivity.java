@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+
         nightModeImageView.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, FocusActivity.class);
             startActivity(intent);

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Timely</string>
     <string name="edit_button_content_description">Edit</string>
+    <string name="back_button_content_description">Back</string>
+
 
 </resources>
