@@ -24,16 +24,16 @@
             ></ImageView>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Settings"
-            android:textColor="#FFFB92A8"
-            android:textSize="18dp"
-            android:textStyle="bold">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Settings"
+        android:textColor="#FFFB92A8"
+        android:textSize="18dp"
+        android:textStyle="bold">
 
-        </TextView>
+    </TextView>
 
 
     </RelativeLayout>
