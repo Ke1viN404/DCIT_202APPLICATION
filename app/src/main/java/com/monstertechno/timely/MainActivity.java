@@ -3,9 +3,11 @@ package com.monstertechno.timely;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
         nightModeImageView.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, FocusActivity.class);
             startActivity(intent);
+        });
+        LinearLayout notesLinearLayout = findViewById(R.id.notesButton);
+        notesLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Open the notes activity
+                Intent intent = new Intent(MainActivity.this, NotesActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
